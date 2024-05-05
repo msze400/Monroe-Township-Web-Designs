@@ -642,7 +642,7 @@
 	#reviews {
 		.cs-card-group {
 			display: flex;
-			justify-content: space-between;
+			justify-content: center; //change if multiple reviews
 			align-items: center;
 			gap: calc(16 / 16 * 1rem);
 		}

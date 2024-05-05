@@ -8,9 +8,9 @@
 @media only screen and (min-width: 0em) {
 	// Website colors
 	:root {
-		--primary: #ffba19;
-		--primaryLight: #ffd675;
-		--secondary: #001f3f;
+		--primary: #5ba3f1;
+		--primaryLight: #dcf2ff;
+		--secondary: #004B8E;
 		--secondaryLight: #001f3f;
 		--headerColor: #1a1a1a;
 		--bodyTextColor: #4e4b66;
@@ -1118,8 +1118,8 @@
 				text-align: center;
 
 				img {
-					width: auto;
-					height: 100%;
+					width: 100%;
+					// height: 100%;
 					display: block;
 				}
 			}
