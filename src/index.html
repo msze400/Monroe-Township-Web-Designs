@@ -13,6 +13,15 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/css/local.css" />
     <link rel="stylesheet" href="/css/critical.css" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYM7981Q6J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+    
+        gtag('config', 'G-FYM7981Q6J');
+    </script>
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -33,14 +42,6 @@ eleventyNavigation:
     </script>
 {% endblock %}
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FYM7981Q6J"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-FYM7981Q6J');
-</script>
 
 {% block body %}
 
