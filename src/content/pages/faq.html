@@ -1,0 +1,122 @@
+---
+title: 'FAQ'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'faq/'
+eleventyNavigation:
+    key: FAQ
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/css/faq.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-350">
+    <div class="cs-container">
+        <div class="cs-left">
+            <!--Big Image-->
+            <picture class="cs-picture cs-picture1" aria-hidden="true">
+                <source media="(max-width: 600px)"
+                    srcset="/assets/images/collaboration.webp">
+                <source media="(min-width: 601px)"
+                    srcset="/assets/images/collaboration.webp">
+                <img loading="lazy" decoding="async"
+                    src="/assets/images/collaboration.webp" alt="collaboration"
+                    width="672" height="672">
+            </picture>
+            <!--Medium Image-->
+            <picture class="cs-picture cs-picture2" aria-hidden="true">
+                <source media="(max-width: 600px)"
+                    srcset="/assets/images/collaboration2.webp">
+                <source media="(min-width: 601px)"
+                    srcset="/assets/images/collaboration2.webp">
+                <img loading="lazy" decoding="async"
+                    src="/assets/images/collaboration2.webp" alt="collaboration"
+                    width="300" height="300">
+            </picture>
+            <!--Small Image-->
+            <picture class="cs-picture cs-picture3" aria-hidden="true">
+                <source media="(max-width: 600px)"
+                    srcset=/assets/images/collaboration3.webp>
+                <source media="(min-width: 601px)"
+                    srcset="/assets/images/collaboration3.webp">
+                <img loading="lazy" decoding="async"
+                    src="/assets/images/collaboration3.webp" alt="collaboration" width="200"
+                    height="200">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Asked questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How longs does the subsrciption last?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                    Our website subscription plan runs for a minimum of 12 months, after which it continues on a month-to-month basis.
+                    You’re free to cancel anytime once the initial 12-month term is complete. <br><br> Please note that the website remains our
+                    property if the subscription is canceled—this helps us keep our pricing fair and sustainable for all clients.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What is your plan cancellation policy?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        If you choose to cancel before the initial 12-month term ends, the remaining balance of the standard website cost
+                        ($3,800) will be due, minus any payments already made. <br><br> Our goal is to build long-term partnerships with our
+                        clients—working with businesses that value consistent growth, collaboration, and lasting results.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Are there refunds?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        When you sign a contract—whether it’s a lump-sum payment or a subscription plan—we’re committed to creating a design
+                        you’ll love. If we’re unable to deliver a design you’re 100% happy with and you decide not to move forward, we’ll refund
+                        your initial payment in full.
+                        <br><br>
+                        Once you approve the design and we begin building your website, refunds are no longer guaranteed. At that stage, any
+                        refund requests will be handled at our discretion.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            $100 Per additional page, is that one time or monthly?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Each additional page is a one-time fee of $100 per page—not a recurring monthly charge. <br><br>
+                        
+                        For example, if you need four
+                        extra pages, that’s a total of $400, paid once. No ongoing fees—just straightforward, transparent pricing (because
+                        monthly page fees would be crazy!
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% include 'components/cta.html' %}
+
+{% endblock %}
